@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background: #3078bc;
+  margin-top: 70px;
+  padding: 48px 0;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
+    margin: 0 auto;
+  }
+  &__icon {
+    fill: #ffffff;
+    width: 48px;
+    height: 48px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}

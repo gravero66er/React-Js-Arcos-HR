@@ -1,0 +1,79 @@
+.banner {
+  position: relative;
+  margin-top: 70px;
+  background: url("../img/banner.png") top/cover no-repeat;
+  width: 100%;
+  height: 660px;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3078bc;
+    opacity: 0.5;
+  }
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__goals {
+    position: absolute;
+    bottom: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media (max-width: 1500px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      top: 80px;
+    }
+  }
+  &__item {
+    background-color: #4390d8;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+    @media (max-width: 765px) {
+      padding: 15px;
+    }
+  }
+  &__number {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    @media (max-width: 1000px) {
+      font-size: 35px;
+    }
+  }
+  &__info {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    position: relative;
+    @media (max-width: 765px) {
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 15px;
+    }
+  }
+}

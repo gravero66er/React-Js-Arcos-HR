@@ -1,0 +1,20 @@
+body {
+  min-width: 320px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@import 'styles/reset.sass';
+@import 'styles/fonts.scss';
+@import 'styles/common.scss';
+@import 'styles/header.scss';
+@import 'styles/quote.scss';
+@import 'styles/banner.scss';
+@import 'styles/about.scss';
+@import 'styles/culture.scss';
+@import 'styles/mentors.scss';
+@import 'styles/vacancy.scss';
+@import 'styles/footer.scss';

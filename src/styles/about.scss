@@ -1,0 +1,62 @@
+.about {
+  margin-top: 70px;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__goals {
+    display: grid;
+    grid-gap: 50px;
+    text-align: center;
+   
+  }
+  &__goals-top {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+  }
+  &__goals-bottom {
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 50px auto 0;
+    @media (max-width: 695px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    @media (max-width: 900px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.item__img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+}
+
+.item__img-one {
+  background: url("../img/goal_1.png") center/cover no-repeat;
+}
+.item__img-two {
+  background: url("../img/goal_2.png") center/cover no-repeat;
+}
+.item__img-three {
+  background: url("../img/goal_3.png") center/cover no-repeat;
+}
+.item__img-four {
+  background: url("../img/goal_4.png") center/cover no-repeat;
+}
+.item__img-five {
+  background: url("../img/goal_5.png") center/cover no-repeat;
+}

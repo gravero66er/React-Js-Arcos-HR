@@ -1,0 +1,231 @@
+.culture {
+  margin-top: 70px;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 875px) {
+      grid-template-columns: 1fr;
+      margin-top: 30px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__info-right {
+    text-align: left;
+    margin: 0 0 30px;
+  }
+  &__info-left {
+    text-align: right;
+    margin: 50px 0 0;
+    @media (max-width: 930px) {
+      margin: 30px 0 0;
+    }
+  }
+  &__title {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 35px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+    @media (max-width: 350px) {
+      font-size: 20px;
+    }
+  }
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-right {
+    justify-content: flex-end;
+  }
+  &__item-left {
+    justify-content: flex-start;
+  }
+
+  &__img-one {
+    position: relative;
+    background: url("../img/culture_1.png") center/cover no-repeat;
+    width: 100%;
+    height: 755px;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+  &__img-two {
+    position: relative;
+    background: url("../img/culture_2.png") center/cover no-repeat;
+    width: 100%;
+    height: 434px;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  &__img-three {
+    position: relative;
+    background: url("../img/culture_3.png") center/cover no-repeat;
+    width: 100%;
+    height: 434px;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(-10px);
+    }
+  }
+  &__img-four {
+    position: relative;
+    background: url("../img/culture_4.png") center/cover no-repeat;
+    width: 100%;
+    height: 697px;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  &__img-five {
+    position: relative;
+    background: url("../img/culture_5.png") center/cover no-repeat;
+    width: 100%;
+    height: 670px;
+    grid-column: 1/3;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(-10px);
+    }
+    @media (max-width: 875px) {
+      grid-template-columns: 1fr;
+      grid-column: 1/2;
+    }
+  }
+  &__img-six {
+    position: relative;
+    background: url("../img/culture_6.png") center/cover no-repeat;
+    width: 100%;
+    height: 755px;
+    border-radius: 20px;
+    box-shadow: (0px 10px 15px rgba(0, 0, 0, 0.22));
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3078bc;
+      opacity: 0.5;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+}

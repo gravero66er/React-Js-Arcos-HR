@@ -1,0 +1,90 @@
+.vacancy {
+  margin-top: 70px;
+  @media (max-width: 700px) {
+    margin-top: 30px;
+  }
+  &__list {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media (max-width: 1100px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 700px) {
+      margin-top: 30px;
+    }
+  }
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    padding: 30px;
+  }
+  &__title {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 20px;
+    @media (max-width: 450px) {
+      font-size: 15px;
+    }
+    @media (max-width: 700px) {
+      margin-top: 30px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 47px;
+    text-align: right;
+  }
+  &__name {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    margin-right: 16px;
+    & p {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      color: #000000;
+      margin: 0;
+      @media (max-width: 450px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    @media (max-width: 450px) {
+      font-size: 20px;
+    }
+  }
+  &__photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: url("../img/vacancy-1.png") center/cover no-repeat;
+    @media (max-width: 450px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
